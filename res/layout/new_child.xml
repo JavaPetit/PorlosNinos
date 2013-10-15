@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+            android:layout_width="match_parent" android:background="#E1E1E1">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" style="@style/page">
+
+        <EditText android:id="@+id/tbName" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:hint="Nombre"/>
+        <EditText android:id="@+id/tbDescription" android:layout_height="wrap_content"
+                  android:layout_width="match_parent" android:hint="Descripción"
+                  android:inputType="textMultiLine" android:lines="4" android:gravity="top|left"/>
+
+
+        <pe.javapetit.apps.porlosNinos.gui.control.NoScrollListView android:id="@+id/listView"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:layout_width="match_parent"
+                                                                    android:divider="@null"
+                                                                    android:dividerHeight="0dp"></pe.javapetit.apps.porlosNinos.gui.control.NoScrollListView>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
